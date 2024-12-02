@@ -14,6 +14,13 @@ Following the benchmarks from [sglang benchmarks](https://github.com/sgl-project
 
 ### Llama 3.1 70B Insruct 4 x H200 80G
 
-| RPS  | Num Prompts | Engine | Request throughput | Output token throughput |
-|------|-------------|--------|--------------------|-------------------------|
-| inf  | 5000        | SGLang | 25.14              | **4885.17**             |
+| RPS  | Num Prompts | Engine | Request throughput | Output token throughput |  Tensor Parallel  |
+|------|-------------|--------|--------------------|-------------------------|-------------------|
+| inf  | 5000        | SGLang | 25.14              | **4885.17**             |4                  |
+
+
+### Llama 3.1 70B Insruct 8 x H200 80G
+
+| RPS  | Num Prompts | Engine | Request throughput | Output token throughput |  Tensor Parallel  |
+|------|-------------|--------|--------------------|-------------------------|-------------------|
+| inf  | 5000        | SGLang | 37.96              | **7376.03**             |8                  |
