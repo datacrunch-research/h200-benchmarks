@@ -3,7 +3,7 @@ Following the benchmarks from [sglang benchmarks](https://github.com/sgl-project
 
 ## Online benchmark results
 
-### Llama 3.1 70B Insruct 4 x H200 141G
+### Llama 3.1 70B Instruct 4 x H200 141GB
 
 | RPS  | Num Prompts | Engine | Median E2E Latency | Median TTFT | Median TPOT | Median ITL |
 |------|-------------|--------|--------------------|-------------|-------------|------------|
@@ -12,15 +12,21 @@ Following the benchmarks from [sglang benchmarks](https://github.com/sgl-project
 
 ## Offline benchmark results
 
-### Llama 3.1 70B Insruct 4 x H200 141G
+### Llama 3.1 70B Instruct 4 x H200 141GB
 
 | RPS  | Num Prompts | Engine | Request throughput | Output token throughput |  Tensor Parallel  |
 |------|-------------|--------|--------------------|-------------------------|-------------------|
 | inf  | 5000        | SGLang | 25.14              | **4885.17**             |4                  |
 
 
-### Llama 3.1 70B Insruct 8 x H200 141G
+### Llama 3.1 70B Instruct 8 x H200 141GB
 
 | RPS  | Num Prompts | Engine | Request throughput | Output token throughput |  Tensor Parallel  |
 |------|-------------|--------|--------------------|-------------------------|-------------------|
 | inf  | 5000        | SGLang | 37.96              | **7376.03**             |8                  |
+
+
+### Llama 3.1 405B Instruct 8 x H200 141GB
+| RPS  | Num Prompts | Engine | Request throughput | Output token throughput |  Tensor Parallel  |
+|------|-------------|--------|--------------------|-------------------------|-------------------|
+| inf  | 5000        | SGLang | 9.16              | **1779.16**             |8                  |
